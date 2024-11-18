@@ -21,7 +21,7 @@ async function main() {
 
   let proxies = [];
   if (useProxy) {
-    proxies = await readLines('proxy.txt').then((lines) =>
+    proxies = await readLines('proxies.txt').then((lines) =>
       lines
         .map((line) => {
           const [host, port, username, password] = line.split(':');
